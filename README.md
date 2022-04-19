@@ -11,7 +11,7 @@ Record Linkage
 	multiple sources about the entities, represented by a different set of attributes depended on 
 	the source from which the information originated.
  
-    	In the literature this challenge is often encountered with different names, such as:
+ 	In the literature this challenge is often encountered with different names, such as:
 	Record deduplication, Entity resolution, Merge and purge, List washing, Record linkage and 
 	others
  
@@ -68,16 +68,16 @@ Evaluation
  
 Code
 
-    record_linkage.py
+  record_linkage.py
    
-  The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.3-bin-hadoop2.7
-  bundle has been used.
+  The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.3-bin-hadoop2.7  
+  bundle has been used.   
   All can be run interactively with pyspark shell or by submitting  
-      e.g. exec(open("project/location/record_linkage/record_linkage.py").read()) for an all at once execution.
-  The external python packages that are used in this implementation exist in the requirements.txt file. 
+      e.g. exec(open("project/location/record_linkage/record_linkage.py").read()) for an all at once execution.  
+  The external python packages that are used in this implementation exist in the requirements.txt file.   
   Install with:   
 	    pip install -r project/location/record_linkage/requirements.txt
-  This use case is inspired from the series of experiments presented in [1], though it deviates from it, in the
+  This use case is inspired from the series of experiments presented in [1], though it deviates from it, in the  
   programming language, the setting used and in the analysis followed.
   
  
