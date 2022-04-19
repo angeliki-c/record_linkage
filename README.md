@@ -1,7 +1,5 @@
-# record_linkage
 
-
-Record Linkage
+### Record Linkage
 
 	A problem we are often called upon to address, when dealing with big volumes of data, often at 
 	the data cleansing phase of the data processing pipeline, is that of identifying the records
