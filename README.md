@@ -1,24 +1,25 @@
 # record_linkage
 
+
 Record Linkage
 
-  A problem we are often called upon to address, when dealing with big volumes of data, often at 
+	A problem we are often called upon to address, when dealing with big volumes of data, often at 
 	the data cleansing phase of the data processing pipeline, is that of identifying the records
 	that essentially correspond to the same entities. Upon their recognition, we act according to
 	the policy adopted in each case we study (e.g delete the records, merge records e.t.c.).
-  We encounter the need of entity resolution, specially when there is information coming from 
+  	We encounter the need of entity resolution, specially when there is information coming from 
 	multiple sources about the entities, represented by a different set of attributes depended on 
 	the source from which the information originated.
  
-    In the literature this challenge is often encountered with different names, such as:
-        Record deduplication, Entity resolution, Merge and purge, List washing, Record linkage
-        and others
+    	In the literature this challenge is often encountered with different names, such as:
+	Record deduplication, Entity resolution, Merge and purge, List washing, Record linkage and 
+	others
  
  
  
 Techniques followed
 
-  In our case study, a simplistic model is created, in a much similar way as the one folowed in [1],
+	In our case study, a simplistic model is created, in a much similar way as the one folowed in [1],
 	for the prediction of whether two entities contained in each record of a database match (it is the
 	same entity). Subsequently, a simple evaluation approach is used, as one would be applied, when being
 	at the early stage of our data problem analysis, as our aim in this work has not been, on developing
@@ -71,10 +72,10 @@ Code
    
   The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.3-bin-hadoop2.7
   bundle has been used.
-  All can be run interactively with pyspark shell or by submitting
+  All can be run interactively with pyspark shell or by submitting  
       e.g. exec(open("project/location/record_linkage/record_linkage.py").read()) for an all at once execution.
   The external python packages that are used in this implementation exist in the requirements.txt file. 
-  Install with: 
+  Install with:   
 	    pip install -r project/location/record_linkage/requirements.txt
   This use case is inspired from the series of experiments presented in [1], though it deviates from it, in the
   programming language, the setting used and in the analysis followed.
